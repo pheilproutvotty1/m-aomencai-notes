@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳门彩 · 专题介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+            background-color: #f6f3ed;
+            color: #2c2b28;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .page {
+            max-width: 840px;
+            margin: 0 auto;
+            background: #fdfbf7;
+            padding: 3rem 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+        }
+
+        /* 首页横幅 */
+        .hero {
+            text-align: center;
+            padding-bottom: 2.2rem;
+            border-bottom: 1px solid #e3ddd3;
+            margin-bottom: 2.5rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            color: #3e3a33;
+            margin-bottom: 0.3rem;
+        }
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #7b756b;
+            margin-top: 0.2rem;
+            letter-spacing: 2px;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #eae3d8;
+            color: #4d473e;
+            padding: 0.3rem 1.4rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: 0.8rem;
+        }
+
+        /* 背景说明 — 带引用块样式 */
+        .bg-block {
+            background: #efece5;
+            padding: 1.8rem 2rem;
+            border-left: 6px solid #c1b5a4;
+            border-radius: 12px;
+            margin-bottom: 2.2rem;
+            font-size: 1rem;
+        }
+        .bg-block p {
+            margin-bottom: 0.5rem;
+        }
+        .bg-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 三段介绍卡片式 */
+        .intro-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+        .intro-card {
+            background: #fcfaf6;
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #ece6dc;
+        }
+        .intro-card h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #3f3a32;
+            margin-bottom: 0.6rem;
+            border-left: 4px solid #b3a696;
+            padding-left: 0.8rem;
+        }
+        .intro-card p {
+            margin-bottom: 0.4rem;
+            color: #3e3a33;
+        }
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 提示框 — 像便签 */
+        .notice-box {
+            background: #f1ede6;
+            border-radius: 16px;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0 1.5rem;
+            border: 1px dashed #c9bfb0;
+            font-size: 0.95rem;
+        }
+        .notice-box strong {
+            color: #4d4437;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            text-align: center;
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e0d9cf;
+            color: #6f685e;
+            font-size: 0.95rem;
+        }
+        .footer-note a {
+            color: #6f685e;
+            text-decoration: underline wavy #c6bcae 1px;
+            text-underline-offset: 4px;
+            font-weight: 400;
+        }
+        .footer-note a:hover {
+            color: #2f2a24;
+            text-decoration: underline wavy #9d8f7c 1.5px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 2rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+                letter-spacing: 4px;
+            }
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+            .intro-card {
+                padding: 1.2rem 1rem;
+            }
+            .bg-block {
+                padding: 1.2rem 1rem;
+            }
+            .notice-box {
+                padding: 1.2rem 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .page {
+                padding: 1.5rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 首页横幅 -->
+    <div class="hero">
+        <h1>澳门彩</h1>
+        <div class="sub">快速识别 · 专注用途</div>
+        <div class="badge">专题 · 杂志式导读</div>
+    </div>
+
+    <!-- 背景说明：为什么会有这个网站 -->
+    <div class="bg-block">
+        <p><strong>这个网站是什么？</strong> 许多用户初次打开 <a href="https://m-aomencai.com" style="color:#3e3a33;text-decoration: underline wavy #b3a696 1px;text-underline-offset:3px;">澳门彩</a> 时，会希望立刻明白它的定位。本站围绕特定信息聚合与呈现而设计，不涉及任何投注、博彩或交易引导。页面内容聚焦于资讯索引与分类说明，帮助浏览者快速判断是否符合自己的需求。</p>
+        <p style="margin-top:0.6rem;">网站风格偏向简洁直达，没有冗余装饰。所有栏目与链接均以信息可读性为优先，方便用户自行筛选感兴趣的部分。</p>
+    </div>
+
+    <!-- 三段自然介绍 (杂志式卡片) -->
+    <div class="intro-grid">
+        <div class="intro-card">
+            <h3>信息板块与分类</h3>
+            <p>网站主要划分成几个主题区域：趋势笔记、历史归档、常见问题整理。每个板块都采用平实的条目式排列，没有跳转干扰。浏览者可以按标题快速定位自己关心的段落。</p>
+            <p>例如「常见问题整理」里集中了用户询问频次较高的话题，答案均以客观事实为基础，不包含主观诱导或模糊表述。</p>
+        </div>
+        <div class="intro-card">
+            <h3>内容风格与边界</h3>
+            <p>所有文字都经过克制筛选，避免使用情绪化或夸大用语。网站不提供任何预测、保证或所谓“内部信息”。<a href="https://m-aomencai.com" style="color:#3f3a32;text-decoration: underline dotted #b3a696 1px;text-underline-offset:2px;">澳门彩</a> 所展示的内容仅限于公开可查的资料整理，用户应基于自身判断使用。</p>
+            <p>如果你正在寻找某个具体术语的定义或背景，网站内的索引页面可以帮你节省检索时间。每个条目都尽量保留来源特征，方便交叉核实。</p>
+        </div>
+        <div class="intro-card">
+            <h3>浏览体验与适配</h3>
+            <p>页面针对手机和电脑均做了基础适配，字号与间距优先照顾长时间阅读。所有链接都采用低调的装饰下划线，不制造紧迫感。你可以在站内自由跳转，不会遇到弹窗或强制跳转。</p>
+            <p>网站没有用户注册、评论或数据收集模块，纯粹作为一份公开的说明性页面存在。</p>
+        </div>
+    </div>
+
+    <!-- 提示框 / FAQ 摘要风格 -->
+    <div class="notice-box">
+        <strong>⚠️ 提示</strong><br>
+        本站为信息说明页，不提供任何形式的博彩、投注或理财服务。如果你是被某些推广渠道引导至此，请留意甄别。建议将 <a href="https://m-aomencai.com" style="color:#4d4437;text-decoration: underline wavy #b3a696 1px;text-underline-offset:3px;">澳门彩</a> 视作一个普通的资讯汇总站点，所有内容均不构成建议或承诺。
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+        <p>若想进一步浏览完整分类与条目，可直接前往 <a href="https://m-aomencai.com">澳门彩</a> 主页。</p>
+        <p style="margin-top:0.4rem; font-size:0.85rem; color:#938c80;">本页仅作介绍用途 · 内容版本 2025</p>
+    </div>
+
+</div>
+</body>
+</html>
